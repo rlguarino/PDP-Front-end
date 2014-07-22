@@ -78,6 +78,8 @@
           console.log(result['registration_end']);
           console.log(result['approval_start']);
           console.log(result['approval_end']);
+          console.log(result['professionalceus']);
+          console.log(result['generalceus']);
           console.log(result['description']);
           
           //Prefill the boxes
@@ -89,6 +91,8 @@
           $("#endTimeReg").html(result['registration_end']);
           $("#startTimeApprove").html(result['approval_start']);
           $("#endTimeApprove").html(result['registration_end']);
+          $("#professionalceus").html(result['professionalceus']);
+          $("#generalceus").html(result['generalceus']);
           $("#description").html(result['description']);
          },
          error: function(XMLHttpRequest, textStatus, errorThrown) { 
@@ -133,6 +137,10 @@
               <p id="startTimeApprove" class="viewPage"></p>
               <label for="endTimeApprove">Approval End Time:</label>
               <p id="endTimeApprove" class="viewPage"></p>
+              <label for="professionalceus">Professional Ceus:</label>
+              <p id="professionalceus" class="viewPage"></p>
+              <label for="genearalceus">General Ceus:</label>
+              <p id="generalceus" class="viewPage"></p>
               <label for="description">Event Description:</label>
               <p id="description" class="viewPage"></p>
               <input type="button" id="register" value="Register for this Event">
