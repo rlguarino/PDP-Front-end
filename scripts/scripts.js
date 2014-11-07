@@ -4,7 +4,7 @@
 // @prepros-prepend !subPageNavigation.js
 // @prepros-prepend !contact.js
 
-var rootLoc = 'http://dgonyeontid.csh.rit.edu'
+var rootLoc = 'http://athena.csh.rit.edu:'
 
 var hasClass = function (element, className) {
 	return new RegExp(' ' + className + ' ').test(' ' + element.className + ' ');
